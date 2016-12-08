@@ -1,6 +1,2 @@
 # learnNLP
-## installation
-
-```
-pip install treetaggerwrapper
-```   
+to study TF-IDF
