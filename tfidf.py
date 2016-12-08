@@ -1,5 +1,5 @@
 document1 = "I have a pen"
-document2 = "I have an Apple"
+document2 = "I have an apple"
 document3 = "Applepen!"
 document4 = "I have a pen"
 document5 = "I have apple and apple"
@@ -11,13 +11,23 @@ documents = [document1, document2, document3, document4, document5]
 
 def sliceBySpace(document):
     return document.split(" ")
-print(sliceBySpace(document1))
+
+splitted_doc1 = sliceBySpace(document1)
+splitted_doc2 = sliceBySpace(document2)
+splitted_doc3 = sliceBySpace(document3)
+splitted_doc4 = sliceBySpace(document4)
+splitted_doc5 = sliceBySpace(document5)
+
+documents = [splitted_doc1, splitted_doc2, splitted_doc3, splitted_doc4, splitted_doc5]
 
 def tf(term, document):
-    tf_values = document.count(term)
+    tf_values = 0
+    for word in document:
+        if word == term:
+            tf_values += 1
     return tf_values
 
-print(tf(term1, document2))
+print(tf(term2, splitted_doc5))
 
 def idf(term, documents):
     import math
