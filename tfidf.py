@@ -9,6 +9,10 @@ term2 = "apple"
 
 documents = [document1, document2, document3, document4, document5]
 
+def sliceBySpace(document):
+    return document.split(" ")
+print(sliceBySpace(document1))
+
 def tf(term, document):
     tf_values = document.count(term)
     return tf_values
