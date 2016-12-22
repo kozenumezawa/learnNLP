@@ -17,7 +17,7 @@ answer = []
 number_of_data = len(question)
 for i in range(number_of_data):
     min_index = find_min_index(question)
-    ##
-    ##
+    answer.append(question[min_index])
+    del(question[min_index])
 
-print(answer) # output : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(answer)
