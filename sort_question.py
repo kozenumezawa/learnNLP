@@ -11,11 +11,7 @@ def find_min_index(number_list):
 
 question = [5, 3, 2, 8, 9, 0, 4, 1, 6, 7]
 
-answer = []
-
 # sorting
-number_of_data = len(question)
-for i in range(number_of_data):
-    ##
+for i in range(len(question)):
 
-print(answer) # output : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(question)
