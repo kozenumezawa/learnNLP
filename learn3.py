@@ -14,4 +14,5 @@ document4 = "I have a pen"
 document5 = "I have apple and apple"
 
 documents = [document1, document2, document3, document4, document5]
+
 showElements(documents)
