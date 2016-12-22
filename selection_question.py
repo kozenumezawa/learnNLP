@@ -1,10 +1,10 @@
 # coding: utf-8
 def find_min_index(number_list):
     min_index = 0
-    min_value = question[min_index]
+    min_value = number_list[min_index]
 
-    for i in range(1, len(question)):
-        if(question[i] < min_value):
+    for i in range(1, len(number_list)):
+        if(number_list[i] < min_value):
             #####
             #####
     return min_index
