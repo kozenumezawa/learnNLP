@@ -1,5 +1,5 @@
 # coding: utf-8
-def find_min_value(number_list):
+def find_min_index(number_list):
     min_index = 0
     min_value = question[min_index]
 
@@ -7,7 +7,10 @@ def find_min_value(number_list):
         if(question[i] < min_value):
             min_index = i
             min_value = question[min_index]
-    return min_value
+    return min_index
+
 
 question = [5, 3, 2, 8, 9, 0, 4, 1, 6, 7]
-print(find_min_value(question))
+min_index = find_min_index(question)
+print(min_index)
+print(question[min_index])
